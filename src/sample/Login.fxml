@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_login" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login">
+   <children>
+      <Pane layoutX="503.0" prefHeight="700.0" prefWidth="397.0" style="-fx-background-color: #34495e;">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="149.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-private-account-male-100.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+            <TextField fx:id="textFPseudo" layoutX="128.0" layoutY="248.0" promptText="pseudo" styleClass="text-F" stylesheets="@../css-style/radio-button.css" />
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="70.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/id-card.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="61.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-password-100.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btn_se_connecter" buttonType="RAISED" layoutX="159.0" layoutY="359.0" onAction="#goToUserPane" ripplerFill="#2c3e50" style="-fx-background-color: #27ae60;" text="se connecter" textFill="WHITE" />
+            <Label layoutX="189.0" layoutY="404.0" prefHeight="13.0" prefWidth="42.0" text="- ou -" textFill="WHITE" />
+            <JFXButton fx:id="btn_s_inscrire" buttonType="RAISED" layoutX="171.0" layoutY="438.0" onAction="#goToForm" ripplerFill="#2c3e50" style="-fx-background-color: #fff;" text="s'inscrire" textFill="#2c3e50" />
+            <PasswordField fx:id="textFPassWord" layoutX="128.0" layoutY="301.0" promptText="mot de passe" styleClass="text-F" stylesheets="@../css-style/radio-button.css" />
+            <Label layoutX="134.0" layoutY="189.0" prefHeight="21.0" prefWidth="139.0" text="Se connecter" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="36.0" layoutY="570.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-facebook-filled-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="36.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-envelope-100.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="21.0" layoutY="538.0" text="Nous contacter : " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="9.0" layoutY="520.0" prefHeight="3.0" prefWidth="380.0" />
+            <Label layoutX="96.0" layoutY="585.0" text="Tower Defender" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="646.0" text="TowerDefender23@gmail.com" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="0.0" radius="3.23" width="14.92" />
+         </effect>
+      </Pane>
+      <ImageView fitHeight="300.0" fitWidth="308.0" layoutX="105.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/freeLogo.jpeg" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="149.0" layoutY="541.0" text="Bienvenu au Tower Defender" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="162.0" layoutY="568.0" prefHeight="3.0" prefWidth="182.0" />
+   </children>
+</AnchorPane>

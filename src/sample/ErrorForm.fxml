@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="315.0" prefWidth="568.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ErrorForm">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="256.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="256.0" AnchorPane.rightAnchor="244.0">
+         <image>
+            <Image url="@../img/icons8-banned-male-100.png" />
+         </image>
+         <effect>
+            <InnerShadow color="#e74c3c" />
+         </effect>
+      </ImageView>
+      <Label layoutX="183.0" layoutY="125.0" text="Attention utilisateur banni !!!" textFill="#e74c3c" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="182.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="textAreaErrorForm" focusColor="#e74c3c" layoutX="139.0" layoutY="166.0" prefHeight="100.0" prefWidth="335.0" styleClass="text-area" stylesheets="@../css-style/radio-button.css" unFocusColor="#34495e" />
+   </children>
+</AnchorPane>

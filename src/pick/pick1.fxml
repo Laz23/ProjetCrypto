@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="225.0" prefWidth="500.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pick.Pick1">
+   <effect>
+      <DropShadow />
+   </effect>
+   <children>
+      <JFXRadioButton layoutX="87.0" layoutY="125.0" styleClass="radio-btn" stylesheets="@../css-style/radio-button.css" text="plus rapide">
+         <toggleGroup>
+            <ToggleGroup fx:id="pick" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="274.0" layoutY="125.0" styleClass="radio-btn" stylesheets="@../css-style/radio-button.css" text="moins rapide" toggleGroup="$pick" />
+   </children>
+</AnchorPane>

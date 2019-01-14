@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="screenPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="500.0" layoutX="113.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="95.16326904296875">
+         <image>
+            <Image url="@../img/freeLogo.jpeg" />
+         </image>
+      </ImageView>
+      <JFXProgressBar layoutX="209.0" layoutY="433.0" styleClass="progresse-bar" stylesheets="@../css-style/radio-button.css" />
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

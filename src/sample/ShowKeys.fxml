@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="499.0" prefWidth="355.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShowKeys">
+   <children>
+      <Pane layoutX="43.0" layoutY="88.0" prefHeight="396.0" prefWidth="269.0" style="-fx-background-color: #9b59b6;" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="43.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="62.0" layoutY="42.0" prefHeight="18.0" prefWidth="145.0" text="Soyez prudant !!!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="35.0" layoutY="77.0" prefWidth="200.0" />
+            <Label layoutX="62.0" layoutY="99.0" text="Votre algorithme est :" textFill="WHITE" />
+            <TextField fx:id="outTextNameAlgo" editable="false" layoutX="50.0" layoutY="129.0" styleClass="text-F" stylesheets="@../css-style/radio-button.css" />
+            <JFXTextArea fx:id="outTextKeys" editable="false" focusColor="#81cfe0" layoutX="35.0" layoutY="195.0" prefHeight="181.0" prefWidth="200.0" style="-fx-background-color: #fff;" styleClass="text-area" stylesheets="@../css-style/radio-button.css" unFocusColor="WHITE" />
+            <Label layoutX="109.0" layoutY="170.0" text="les clés" textFill="WHITE" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="128.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-key-100.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

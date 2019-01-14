@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Propo">
+   <children>
+      <Circle fx:id="circleImg" fill="WHITE" layoutX="225.0" layoutY="49.0" radius="40.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="185.0">
+         <effect>
+            <InnerShadow color="#2c3e50" />
+         </effect></Circle>
+      <Label layoutX="164.0" layoutY="101.0" text="TowerDefender" textFill="#3498db">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextArea editable="false" focusColor="#3498db" layoutX="19.0" layoutY="141.0" prefHeight="94.0" prefWidth="412.0" styleClass="text-area" stylesheets="@../css-style/radio-button.css" text="Tower Defender est une application desktop conçue pour que vous puissiez crypter et décrypter vos documents , elle contient différents algrothemes puissants arithmétiques symétriques.&#10;Tower Defender vous garante la sûreté ." unFocusColor="#2c3e50">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>

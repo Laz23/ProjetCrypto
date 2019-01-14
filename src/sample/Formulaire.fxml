@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorForm" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Formulaire">
+   <children>
+      <Pane layoutX="272.0" layoutY="212.0" prefHeight="321.0" prefWidth="357.0" style="-fx-background-color: #fff;" AnchorPane.leftAnchor="272.0" AnchorPane.rightAnchor="271.0">
+         <children>
+            <TextField fx:id="textNom" layoutX="100.0" layoutY="32.0" promptText="Nom" styleClass="text-F" stylesheets="@../css-style/radio-button.css" />
+            <TextField fx:id="textPrenom" layoutX="100.0" layoutY="69.0" promptText="Prenom" styleClass="text-F" stylesheets="@../css-style/radio-button.css" />
+            <TextField fx:id="textPseudo" layoutX="100.0" layoutY="128.0" promptText="Pseudo" styleClass="text-F" stylesheets="@../css-style/radio-button.css" />
+            <JFXRadioButton fx:id="radioSpecialiste" layoutX="213.0" layoutY="224.0" styleClass="radio-btn" stylesheets="@../css-style/radio-button.css" text="spécialiste" textFill="#34495e">
+               <toggleGroup>
+                  <ToggleGroup fx:id="users" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="radioSimple" layoutX="39.0" layoutY="224.0" styleClass="radio-btn" stylesheets="@../css-style/radio-button.css" text="simple utilisateur" textFill="#34495e" toggleGroup="$users" />
+            <JFXButton fx:id="btnValider" buttonType="RAISED" layoutX="153.0" layoutY="263.0" ripplerFill="#34495e" style="-fx-background-color: #27ae60;" text="valider" textFill="WHITE" />
+            <PasswordField fx:id="textPassWard" layoutX="99.0" layoutY="166.0" promptText="mot de passe" styleClass="text-F" stylesheets="@../css-style/radio-button.css" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <JFXButton fx:id="back" buttonType="RAISED" contentDisplay="TOP" layoutX="730.0" layoutY="580.0" onAction="#backToLogin" prefHeight="50.0" prefWidth="155.0" ripplerFill="#c0392b" text="Retourner" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-delete-100.png" />
+               </image>
+               <effect>
+                  <InnerShadow color="#e74c3c" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnHowDoIt" buttonType="RAISED" contentDisplay="TOP" layoutX="14.0" layoutY="580.0" ripplerFill="#27ae60" text="Comment avoir un compte ?" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-ginger-man-question-mark-100.png" />
+               </image>
+               <effect>
+                  <DropShadow color="#2ecc71" height="6.07" radius="6.2675" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="390.0" layoutY="101.0" prefHeight="26.0" prefWidth="120.0" text="Tower Defender" textFill="WHITE" AnchorPane.leftAnchor="390.0" AnchorPane.rightAnchor="390.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="548.0" text="sera toujours fidèle à vous !" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="420.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="420.0" AnchorPane.rightAnchor="421.22449111938477">
+         <image>
+            <Image url="@../img/freeLogo.jpeg" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="400.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="400.0">
+         <image>
+            <Image url="@../img/icons8-add-male-user-100.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+   </children>
+   <effect>
+      <DropShadow height="6.07" radius="6.2675" />
+   </effect>
+</AnchorPane>

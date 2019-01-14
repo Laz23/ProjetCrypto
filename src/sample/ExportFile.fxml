@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="246.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ExportFile">
+    <children>
+        <Pane layoutX="25.0" layoutY="71.0" prefHeight="194.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+            <effect>
+                <DropShadow />
+            </effect>
+            <children>
+                <TextField fx:id="inFileName" layoutX="15.0" layoutY="91.0" promptText="nom de fichier" />
+                <JFXButton fx:id="btnValider" buttonType="RAISED" layoutX="68.0" layoutY="149.0" ripplerFill="#34495e" style="-fx-background-color: #2ecc71;" text="Valider" textFill="WHITE" />
+                <Label layoutX="42.0" layoutY="33.0" text="Exportation !!!" textFill="#2ecc71">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="74.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/icons8-send-message-female-100.png" />
+            </image>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </ImageView>
+    </children>
+</Pane>

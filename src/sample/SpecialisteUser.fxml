@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane fx:id="anchorUserSpe" prefHeight="700.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SpecialisteUser">
+   <children>
+      <Pane layoutX="111.0" prefHeight="149.0" prefWidth="528.0" style="-fx-background-color: #16a085;" styleClass="pane-shape" stylesheets="@../css-style/radio-button.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <JFXButton fx:id="btnChoiceFile" buttonType="RAISED" layoutX="192.0" layoutY="62.0" ripplerFill="#34495e" style="-fx-background-color: #3498db;" text="Coisir un document" textFill="WHITE" />
+            <TextField fx:id="outTextFile" layoutX="179.0" layoutY="24.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="117.0" layoutY="551.0" prefHeight="149.0" prefWidth="528.0" rotate="180.0" style="-fx-background-color: #8e44ad;" styleClass="pane-shape" stylesheets="@../css-style/radio-button.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <JFXButton fx:id="btnCrypter" buttonType="RAISED" layoutX="147.0" layoutY="38.0" ripplerFill="#34495e" rotate="180.0" style="-fx-background-color: #3498db;" text="Crypter" textFill="WHITE" />
+            <JFXButton fx:id="btnDecrypter" buttonType="RAISED" layoutX="332.0" layoutY="36.0" ripplerFill="#34495e" rotate="180.0" style="-fx-background-color: #3498db;" text="Décrypter" textFill="WHITE" />
+         </children>
+      </Pane>
+      <JFXTextArea fx:id="outTextArea" focusColor="#3498db" layoutX="131.0" layoutY="280.0" prefHeight="170.0" prefWidth="488.0" style="-fx-background-color: #ffff;" styleClass="text-area" stylesheets="@../css-style/radio-button.css" unFocusColor="WHITE">
+         <effect>
+            <DropShadow />
+         </effect></JFXTextArea>
+      <Circle fill="#f1c40f" layoutX="121.0" layoutY="178.0" radius="41.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Circle>
+      <JFXRadioButton fx:id="btnRadioDES" layoutX="94.0" layoutY="166.0" styleClass="radio-btn-2" stylesheets="@../css-style/radio-button.css" text="DES" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="algo" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <Circle fill="#9b59b6" layoutX="676.0" layoutY="125.0" radius="41.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Circle>
+      <JFXRadioButton fx:id="btnRadioRSA" layoutX="649.0" layoutY="129.0" styleClass="radio-btn-2" stylesheets="@../css-style/radio-button.css" text="RSA" textFill="WHITE" toggleGroup="$algo" />
+      <Circle fill="#1abc9c" layoutX="112.0" layoutY="527.0" radius="62.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Circle>
+      <Circle fill="#00b5cc" layoutX="680.0" layoutY="570.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Circle>
+      <JFXRadioButton fx:id="btnRadioElga" layoutX="640.0" layoutY="562.0" styleClass="radio-btn-2" stylesheets="@../css-style/radio-button.css" text="affine" textFill="WHITE" toggleGroup="$algo" />
+      <JFXRadioButton fx:id="btnRadioTran" layoutX="53.0" layoutY="519.0" styleClass="radio-btn-2" stylesheets="@../css-style/radio-button.css" text="Transposition" textFill="WHITE" toggleGroup="$algo" />
+      <Circle fill="#e74c3c" layoutX="361.0" layoutY="191.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Circle>
+      <JFXRadioButton fx:id="btnRadioHill" layoutX="330.0" layoutY="179.0" styleClass="radio-btn-2" stylesheets="@../css-style/radio-button.css" text="Hill" textFill="WHITE" toggleGroup="$algo" />
+      <Circle fill="WHITE" layoutX="500.0" layoutY="506.0" radius="37.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Circle>
+      <JFXRadioButton fx:id="btnRadioCesar" layoutX="465.0" layoutY="505.0" styleClass="radio-btn-3" stylesheets="@../css-style/radio-button.css" text="César" textFill="WHITE" toggleGroup="$algo" />
+      <JFXButton fx:id="btnExport" buttonType="RAISED" contentDisplay="TOP" layoutX="626.0" layoutY="308.0" prefHeight="115.0" prefWidth="124.0" ripplerFill="#00b5cc" text="exporter" textAlignment="CENTER" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="85.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-send-message-female-100.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

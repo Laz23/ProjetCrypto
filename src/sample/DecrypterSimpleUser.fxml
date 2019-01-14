@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="477.0" prefWidth="370.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DecrypterSimpleUser">
+   <children>
+      <Pane layoutX="42.0" layoutY="63.0" prefHeight="382.0" prefWidth="287.0" style="-fx-background-color: #1abc9c;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="85.0" layoutY="52.0" text="Décryptage !!!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <TextField fx:id="c1" layoutX="58.0" layoutY="148.0" promptText="clé 1" />
+            <TextField fx:id="c2" layoutX="58.0" layoutY="195.0" promptText="clé 2" />
+            <TextField fx:id="c3" layoutX="58.0" layoutY="244.0" promptText="clé 3" />
+            <TextField fx:id="c4" layoutX="58.0" layoutY="294.0" promptText="clé 4" />
+            <JFXButton fx:id="btnValider" buttonType="RAISED" layoutX="113.0" layoutY="342.0" ripplerFill="WHITE" style="-fx-background-color: #9b59b6;" text="Valider" textFill="WHITE" />
+            <Separator layoutX="43.0" layoutY="91.0" prefWidth="200.0" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="135.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="135.0">
+         <image>
+            <Image url="@../img/icons8-man-with-keyboard-100.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

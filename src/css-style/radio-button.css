@@ -1,0 +1,40 @@
+.radio-btn {
+ -fx-font-size: 13px;
+ -fx-stroke-width: 2px;
+ -fx-fill: transparent;
+ -fx-text-fill:#34495e;
+ -jfx-selected-color: #3498db;
+ -jfx-unselected-color:#34495e;
+}
+.radio-btn-2 {
+ -fx-font-size: 13px;
+ -fx-stroke-width: 2px;
+ -fx-fill: transparent;
+ -fx-text-fill:#fff;
+ -jfx-selected-color: #fff;
+ -jfx-unselected-color:#fff;
+}
+.radio-btn-3 {
+ -fx-font-size: 13px;
+ -fx-stroke-width: 2px;
+ -fx-fill: transparent;
+ -fx-text-fill:#34495e;
+ -jfx-selected-color: #34495e;
+ -jfx-unselected-color:#34495e;
+}
+.progresse-bar > .bar{
+   -fx-background-color:#3498db;
+}
+.text-F{
+ -fx-text-fill:#2c3e50;
+}
+.text-area-2{
+ -fx-text-fill:#3498db;
+}
+.text-area{
+ -fx-text-fill:#34495e;
+}
+.pane-shape{
+ -fx-shape : "M 50 100 C 0 600 700 550 750 100   ";
+
+}

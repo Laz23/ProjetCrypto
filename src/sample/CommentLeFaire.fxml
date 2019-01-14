@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="494.0" prefWidth="500.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CommentLeFaire">
+   <children>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="210.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="210.0">
+         <image>
+            <Image url="@../img/icons8-ginger-man-question-mark-100.png" />
+         </image>
+         <effect>
+            <InnerShadow color="#2ecc71" />
+         </effect>
+      </ImageView>
+      <JFXTextArea editable="false" focusColor="#2ecc71" layoutX="24.0" layoutY="119.0" prefHeight="146.0" prefWidth="455.0" styleClass="text-area" stylesheets="@../css-style/radio-button.css" text="Pour avoir un compte il faut : &#10;&#10; - remplir tous les champs de saisis &#10; - séléctionner le radio button celui qui vous convient &#10;   séléctionnant ce dernier vous &#10;   choisissez la manière d'untilser &quot; Tower Defender  &quot;&#10; - appuyer sur le bouton &quot;valider&quot; pour valider votre&#10;   compte.&#10;" unFocusColor="#2c3e50" />
+      <Label layoutX="139.0" layoutY="84.0" text="Comment avoir un compte ?" textFill="#2ecc71">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="284.0" prefHeight="44.0" prefWidth="141.0" text="Attention !" textFill="#e74c3c">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-banned-male-100.png" />
+               </image>
+               <effect>
+                  <InnerShadow color="#e74c3c" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Label>
+      <JFXTextArea editable="false" focusColor="#e74c3c" layoutX="24.0" layoutY="346.0" prefHeight="108.0" prefWidth="446.0" styleClass="text-area" stylesheets="@../css-style/radio-button.css" text="Il faut suivre ces étapes sinon votre compte ne sera pas validé : &#10;  - il faut remplir tous les champs de saisis et &#10;    séléctionner tous un radio bouton qui vous&#10;    convient .&#10;  - le pseudo doit être unique" unFocusColor="#34495e" />
+   </children>
+</AnchorPane>
